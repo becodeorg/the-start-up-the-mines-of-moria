@@ -9,10 +9,10 @@ body{
     height: 100vh;
 
     header{
-        width: 100%;
+        width: 100vw;
         height: 15vh;
-        display: block;
-        position: fixed;
+        display: flex;
+        flex-direction: column;
 
         .header-container{
             width: auto;
@@ -51,27 +51,29 @@ body{
                 height: auto;
                 display: flex;
                 align-items: center;
-                justify-content: right;
+                justify-content: space-between;
 
                 ul.home-contact{
+                    width: auto;
                     list-style-type: none;
                     display: flex;
-                    text-align: center;
                     justify-content: center;
-                    margin-right: 2vw;
+                    justify-self: center;
                     
                     li{
-                        width: 5vw;
-                        margin: 1vw;
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
                         
                         a{
+                            width: auto;
                             background-color: #f1faee;
                             color: #3D405B;
                             border: none;
                             font-family: 'Nunito', sans-serif;
-                            font-size: 1.3rem;
+                            font-size: 1rem;
                             font-weight: 700;
-                            padding: 1.3vh 1.4vw;
+                            padding: 1.1vh 1.2vw;
                             text-decoration: none;
                         }
 
@@ -79,7 +81,7 @@ body{
                             background-color: #F2CC8F;
                             color: #f1faee;
                             border: none;
-                            padding: 1.3vh 1.4vw;
+                            padding: 1.1vh 1.2vw;
                             border-radius: 25px;
                             text-decoration: none;
                         }
@@ -90,18 +92,18 @@ body{
                     width: auto;
                     list-style-type: none;
                     display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: right;
-                    text-align: center;
+                    justify-content: space-evenly;
 
                     li{
-                        width: 6vw;
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
                         margin: 0.5vw;
 
                         button.register{
+                            width: auto;
                             background-color: #E07A5F;
-                            padding: 1.3vh 1.5vw;
+                            padding: 1.1vh 1.2vw;
                             border: none;
                             border-radius: 25px;
                             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -109,8 +111,9 @@ body{
                             a{
                                 color: #3D405B;
                                 font-family: 'Nunito', sans-serif;
-                                font-size: 1.1rem;
+                                font-size: 1rem;
                                 font-weight: 700;
+                                text-align: center;
                                 text-decoration: none;
                             }
 
@@ -124,8 +127,9 @@ body{
                         }
 
                         button.login{
+                            width: auto;
                             background-color: #81B29A;
-                            padding: 1.3vh 1.5vw;
+                            padding: 1.1vh 1.2vw;
                             border: none;
                             border-radius: 25px;
                             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -133,9 +137,10 @@ body{
                             a{
                                 color: #3D405B;
                                 font-family: 'Nunito', sans-serif;
-                                font-size: 1.1rem;
+                                font-size: 1rem;
                                 font-weight: 700;
                                 text-decoration: none;
+                                text-align: center;
                             }
 
                             a:hover{
