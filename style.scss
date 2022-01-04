@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1faee;
+    width: 100vw;
+    height: 100vh;
+
+    header{
+        width: 100%;
+        height: 15vh;
+        display: block;
+        position: fixed;
+
+        .header-container{
+            width: auto;
+            height: 15vh;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo-container{
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                a.name{
+                color: #3D405B;
+                font-family: 'Nunito', sans-serif;
+                font-size: 3rem;
+                font-weight: 700;
+                text-decoration: none;
+                display: flex;
+                align-self: center;
+                align-items: center;
+
+                    img.logo{
+                        width: 50px;
+                        height: auto;
+                    }
+                }
+            }
+
+            nav.main-container{
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+
+                ul.home-contact{
+                    list-style-type: none;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    margin-right: 2vw;
+                    
+                    li{
+                        width: 5vw;
+                        margin: 1vw;
+                        
+                        a{
+                            background-color: #f1faee;
+                            color: #3D405B;
+                            border: none;
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 1.3rem;
+                            font-weight: 700;
+                            padding: 1.3vh 1.4vw;
+                            text-decoration: none;
+                        }
+
+                        a:hover{
+                            background-color: #F2CC8F;
+                            color: #f1faee;
+                            border: none;
+                            padding: 1.3vh 1.4vw;
+                            border-radius: 25px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                ul.reg-log{
+                    width: auto;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: right;
+                    text-align: center;
+
+                    li{
+                        width: 6vw;
+                        margin: 0.5vw;
+
+                        button.register{
+                            background-color: #E07A5F;
+                            padding: 1.3vh 1.5vw;
+                            border: none;
+                            border-radius: 25px;
+                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                            a{
+                                color: #3D405B;
+                                font-family: 'Nunito', sans-serif;
+                                font-size: 1.1rem;
+                                font-weight: 700;
+                                text-decoration: none;
+                            }
+
+                            a:hover{
+                                color: #f1faee;
+                            }
+                        }
+
+                        button.register:hover{
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+
+                        button.login{
+                            background-color: #81B29A;
+                            padding: 1.3vh 1.5vw;
+                            border: none;
+                            border-radius: 25px;
+                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                            a{
+                                color: #3D405B;
+                                font-family: 'Nunito', sans-serif;
+                                font-size: 1.1rem;
+                                font-weight: 700;
+                                text-decoration: none;
+                            }
+
+                            a:hover{
+                                color: #f1faee;
+                            }
+                        }
+
+                        button.login:hover{
+                            
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr{
+            border: 1px solid #3D405B;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+    }
+}
