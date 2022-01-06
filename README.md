@@ -7,4 +7,6 @@ Our approach:
 * All courses are available after creating an account (and agreeing to our subscription service)
 * The subscription fee varies depending on a Monthly vs Quarterly vs Yearly payment plan  
 
+To subscribe to our service, please go to our [website](https://wonderful-mayer-cbcbf0.netlify.app).  
+
 Auto-LeA<sup>+</sup>rn was created by Benjamin Langenaken and Kevin Kagubari</pre>
