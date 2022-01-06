@@ -338,30 +338,38 @@ body{
             height: 700px;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            // align-items: center;
+            justify-items: center;
 
             .wrapper {
+                width: 100vw;
+                height: auto;
                 display: grid;
+                align-items: center;
+                justify-items: center;
                 grid-template-columns: repeat(3, 100vw);
                 overflow:hidden;
                 scroll-behavior: smooth;
                 
                 section {
                     width: 100vw;
-                    position: relative;
+                    height: auto;
                     display: grid;
-                    justify-content: center;
+                    align-items: center;
+                    justify-items: stretch;
+                    text-align: center;
                     grid-template-columns: repeat(5, auto);
-                    margin: 1vw 2vw;
+                    margin: 2vw 1vw;
                     
                     .item {
-                    width: 25vw;
-                    padding: 0 2px;
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
                     transition: $duration all;
-                    margin: 0 3vw;
                         
                         &:hover { 
-                        margin: 0 3vw;
                         transform: scale(1.05);
                         }
                     }
@@ -371,11 +379,10 @@ body{
                     }
                     
                     a {
-                    position: absolute;
                     color: #3D405B;
                     text-decoration: none;
-                    font-size: 8em;
-                    text-align: center;
+                    font-size: 4em;
+                    align-self: center;
                     z-index: 1;
                         
                         &:nth-of-type(1) {
