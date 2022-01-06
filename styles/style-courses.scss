@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    background-color: #f1faee;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main{
+        width: 100vw;
+        height: 72vh;
+        display: flex;
+        flex-direction: row;
+
+        .wrapper-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+
+            .wrapper {
+                width: 100vw;
+                height: auto;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: repeat(3, 100vw);
+                overflow:hidden;
+                scroll-behavior: smooth;
+                
+                section {
+                    width: 100vw;
+                    height: auto;
+                    display: grid;
+                    align-items: center;
+                    // justify-items: stretch;
+                    text-align: center;
+                    grid-template-columns: repeat(5, auto);
+                    margin: 2vw 1vw;
+                    
+                    .item {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    transition: $duration all;
+                    border: none;
+                    border-radius: 25px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                        
+                        &:hover { 
+                        transform: scale(1.05);
+                        border-radius: 25px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                    }
+
+                    iframe{
+                        width: 26vw;
+                        height: 25vh;
+                        border: none;
+                        border-radius: 25px;
+                    }
+                    
+                    a {
+                    color: #3D405B;
+                    text-decoration: none;
+                    font-size: 4em;
+                    align-self: center;
+                    z-index: 1;
+
+                        img{
+                            align-self: center;
+                            width:4vw;
+                            height: auto;
+                        }
+                        
+                        &:hover { 
+                            transform: scale(1.20);
+                            }
+
+                        &:nth-of-type(1) {
+                            top:0; bottom:0; left:0;
+                        }
+
+                        &:nth-of-type(2) {
+                            top:0; bottom:0; right: 0;
+                        }
+                    }
+                }     
+            }
+        }
+    }
+}
