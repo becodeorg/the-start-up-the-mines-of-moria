@@ -1,5 +1,6 @@
 ## Auto-LeA<sup>+</sup>rn  
 <br>
+
 Auto-LeA<sup>+</sup>rn is a Start-up geared towards individuals who want to learn new skills in Tech.  
 <br>
 
