@@ -21,7 +21,8 @@ body{
             display: flex;
 
             .main-logo{
-                width: 20vw;
+                width: 25vw;
+                box-sizing: border-box;
                 height: auto;
                 animation: bounceIn 0.6s;
                 transform: rotate(0deg) scale(1) translateZ(0);
@@ -34,12 +35,12 @@ body{
                 
                 @keyframes bounceIn {
                     0% {
-                    opacity: 0.95;
+                    opacity: 0.97;
                     transform: scale(.3);
                     } 
                 
                     50% {
-                    opacity: 0.97;
+                    opacity: 0.98;
                     transform: scale(1.05);
                     } 
                 
