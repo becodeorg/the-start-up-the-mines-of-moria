@@ -390,7 +390,17 @@ body{
                     font-size: 4em;
                     align-self: center;
                     z-index: 1;
+
+                        img{
+                            align-self: center;
+                            width:4vw;
+                            height: auto;
+                        }
                         
+                        &:hover { 
+                            transform: scale(1.20);
+                            }
+
                         &:nth-of-type(1) {
                             top:0; bottom:0; left:0;
                             // opacity: 0.6;
