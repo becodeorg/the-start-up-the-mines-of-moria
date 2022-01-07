@@ -58,12 +58,12 @@ body{
                     align-items: center;
                     transition: $duration all;
                     border: none;
-                    border-radius: 25px;
+                    border-radius: 15px;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                         
                         &:hover { 
                         transform: scale(1.05);
-                        border-radius: 25px;
+                        border-radius: 15px;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         }
                     }
@@ -72,7 +72,7 @@ body{
                         width: 28vw;
                         height: 30vh;
                         border: none;
-                        border-radius: 25px;
+                        border-radius: 15px;
                     }
                     
                     a {
