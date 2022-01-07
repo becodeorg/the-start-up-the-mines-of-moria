@@ -6,7 +6,7 @@ Auto-LeA<sup>+</sup>rn is a Start-up geared towards individuals who want to lear
 
 Our approach:  
 
-* Poviding online courses in our catalog
+* Providing online courses in our catalog
 * All courses are available after creating an account (and agreeing to our subscription service)
 * The subscription fee varies depending on a Monthly vs Quarterly vs Yearly payment plan  
 <br>
