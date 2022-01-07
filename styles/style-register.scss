@@ -1,3 +1,8 @@
+$font-family:   "Open Sans";
+$font-size:     28px;
+
+$color-primary: #E07A5F;
+
 *{
     margin: 0;
     padding: 0;
@@ -16,5 +21,166 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
+        background-size: 200% 100%;
+        animation: move 10s ease infinite;
+        transform: translate3d(0, 0, 0);
+        
+
+        img{
+            width:100px;
+            height: auto;
+            align-self: center;
+            justify-self: center;
+            box-sizing: border-box;
+            height: auto;
+            animation: bounceIn 0.6s;
+            transform: rotate(0deg) scale(1) translateZ(0);
+            transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+            cursor: pointer;
+            animation-delay: 0.9s;
+            
+            &:hover {
+                transform: rotate(10deg) scale(1.25);
+            }
+            
+            @keyframes bounceIn {
+                animation-delay: 0.9s;
+
+                0% {
+                opacity: 0.97;
+                transform: scale(.3);
+                } 
+            
+                50% {
+                opacity: 0.98;
+                transform: scale(1.05);
+                } 
+            
+                70% {
+                opacity: 0.99;
+                transform: scale(.9);
+                }
+            
+                100% {
+                opacity: 1;
+                transform: scale(1);
+                }
+            }
+        }
+
+        .user {
+            width: 90%;
+            max-width: 340px;
+            // margin: 2vh auto;
+        }
+        
+        .user__header {
+            text-align: center;
+            opacity: 0;
+            transform: translate3d(0, 500px, 0);
+            animation: arrive 500ms ease-in-out 0.7s forwards;
+        }
+        
+        .user__title {
+            font-size: $font-size;
+            margin-bottom: -10px;
+            font-weight: 600;
+            color: #E07A5F;
+        }
+        
+        .form {
+            margin-top: 40px;
+            border-radius: 6px;
+            overflow: hidden;
+            opacity: 0;
+            animation: arrive 500ms ease-in-out 0.9s forwards;
+        }
+        
+        .form--no {
+            animation: NO 1s ease-in-out;
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .form__input {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            font-family: $font-family;
+            font-weight: 500;
+            -webkit-appearance: none;
+            border: 0;
+            outline: 0;
+            transition: 0.3s;
+            
+            &:focus {
+                background: darken(#F4F1DE, 5%);
+            }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            font-family: $font-family;
+            font-size: 20px;
+            -webkit-appearance: none;
+            outline: 0;
+            border: 0;
+            color: #3D405B;
+            font-weight: 600;
+            background: $color-primary;
+            transition: 0.3s;
+            
+            &:hover {
+                background: darken($color-primary, 5%);
+                color: #f1faee;
+            }
+        }
+        
+        @keyframes NO {
+            from, to {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        
+            10%, 30%, 50%, 70%, 90% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0);
+            }
+        
+            20%, 40%, 60%, 80% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0);
+            }
+        }
+        
+        @keyframes arrive {
+
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 50px, 0);
+            }
+            
+            100% {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        
+        @keyframes move {
+            0% {
+                background-position: 0 0
+            }
+        
+            50% {
+                background-position: 100% 0
+            }
+        
+            100% {
+                background-position: 0 0
+            }
+        }
     }
 }
